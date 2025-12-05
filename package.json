@@ -1,0 +1,17 @@
+{
+  "name": "raffle-app",
+  "version": "1.0.0",
+  "description": "Raffle web application for fair and transparent prize drawings",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": ["raffle", "lottery", "random-selection", "giveaway"],
+  "author": "Rafael Guevara",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}
