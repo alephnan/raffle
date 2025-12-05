@@ -6,4 +6,5 @@ coverage/
 dist/
 .claude/
 CLAUDE.md
+AGENTS.md
 ProjectPlan.md

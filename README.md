@@ -15,7 +15,7 @@ A professional web application for conducting fair and transparent raffles. Buil
 
 ## Live Demo
 
-Visit the live application: [Your GitHub Pages URL]
+Visit the live application: https://alephnan.github.io/raffle/
 
 ## Quick Start
 
@@ -154,21 +154,6 @@ The application is fully static and can be hosted on any static web server.
 
 ## Customization
 
-### Brand Colors
-
-Edit CSS variables in `css/styles.css`:
-
-```css
-:root {
-    --color-primary: #2F59B8;
-    --color-secondary: #1790D0;
-    --color-accent: #17A2C8;
-}
-```
-
-### Logos
-
-Replace logo files in `assets/logos/` with your own brand assets.
 
 ## Contributing
 
@@ -191,6 +176,4 @@ For questions or issues, please open an issue on GitHub.
 - PapaParse for CSV parsing
 - Canvas Confetti for celebration effects
 
----
 
-**Built with ❤️**
