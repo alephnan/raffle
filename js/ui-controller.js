@@ -95,13 +95,19 @@ const UIController = {
         const { upload, preview, results, header, modal, raffle } = this.elements;
 
         // Upload section events
-        upload.participantsDropZone.addEventListener('click', () => {
+        upload.participantsDropZone.addEventListener('click', (e) => {
+            if (e.target === upload.participantsFile) return; // Avoid double dialogs in Chromium
             upload.participantsFile.click();
         });
 
-        upload.prizesDropZone.addEventListener('click', () => {
+        upload.prizesDropZone.addEventListener('click', (e) => {
+            if (e.target === upload.prizesFile) return; // Avoid double dialogs in Chromium
             upload.prizesFile.click();
         });
+
+        // Prevent file input clicks from bubbling back to the drop zone
+        upload.participantsFile.addEventListener('click', (e) => e.stopPropagation());
+        upload.prizesFile.addEventListener('click', (e) => e.stopPropagation());
 
         upload.participantsFile.addEventListener('change', (e) => {
             this.handleFileSelect(e.target.files[0], 'participants');
